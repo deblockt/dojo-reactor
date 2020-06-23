@@ -2,19 +2,25 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public class Basics {
+
     public static Mono<Void> empty() {
-        throw new RuntimeException("not implemented");
+        return Mono.empty();
+
     }
 
     public static Mono<Integer> return1() {
-        throw new RuntimeException("not implemented");
+        return Mono.just(1);
     }
 
     public static Flux<Integer> return1And2() {
-        throw new RuntimeException("not implemented");
+//        return Flux.create(emiter -> {
+//            emiter.next(1).next(2).complete();
+//        });
+
+        return Flux.just(1, 2);
     }
 
     public static Mono<Void> returnError() {
-        throw new RuntimeException("not implemented");
+        return Mono.error(new Exception("error"));
     }
 }

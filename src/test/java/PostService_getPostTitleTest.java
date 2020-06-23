@@ -14,7 +14,7 @@ public class PostService_getPostTitleTest {
     }
 
     @org.junit.Test
-    public void shouldReturnTheEmptyMonoWhenIgDoesNotExists() {
+    public void shouldReturnAnEmptyMonoWhenItDoesNotExists() {
         final var postService = new PostService();
 
         final var post1Title = postService.getPostTitle(9999);

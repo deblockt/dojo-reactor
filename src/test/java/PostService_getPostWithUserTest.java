@@ -1,11 +1,11 @@
-import reactor.test.StepVerifier;
-
 import static org.junit.Assert.assertEquals;
+
+import reactor.test.StepVerifier;
 
 public class PostService_getPostWithUserTest {
 
     @org.junit.Test
-    public void shouldReturnThePostDetailIfExists() {
+    public void shouldReturnThePostWithUser() {
         final var postService = new PostService();
 
         final var postWithUserMono = postService.getPostWithUser(1);
