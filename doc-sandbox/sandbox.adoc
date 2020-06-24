@@ -1,0 +1,13 @@
+Can github open SVG files ?
+
+== DEFAULT
+image::TOR-PSR-global_archi.svg[]
+
+== Static
+image::TOR-PSR-global_archi.svg[Static]
+
+== Interactive
+image::TOR-PSR-global_archi.svg[Interactive,opts=interactive]
+
+== Inline
+image::TOR-PSR-global_archi.svg[Embedded,opts=inline]
